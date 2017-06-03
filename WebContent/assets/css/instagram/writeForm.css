@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+.wrapper{
+	height:45em;	
+	background-attachment: fixed;
+	background-image: url("../../../images/instagram/goldengate.jpg");
+	background-position: center center;
+	background-size: cover;
+		}
+
+#form{
+	background-color:white;
+	text-align:center;	
+	font-size:1.5em;
+	color:black;
+	width:700px;
+	height:700px;	
+	font-weight:bold;
+	margin: auto;	
+	opacity: 0.85;	
+	border-radius: 20px;			
+	position: relative;
+}
+
+#submit{	
+	width:150px;
+	height:50px;
+	padding:0;
+	background-color: #ff6699;	
+}
+
+input[type=text]{
+	margin-left:100px;
+	width:500px;
+}
+textarea{
+		margin-left:100px;	
+		width:500px;
+}
+
+
+
+img#girl{
+
+position: fixed;
+right: 24em;
+top: 10em;   
+animation-name:blinking;
+animation-duration:3s;/*애니메이션의 진행시간(단위는 s나 ms)*/
+animation-play-state:running;/*애니메이션의 자동실행 지정(running/paused)*/
+animation-iteration-count:infinite;/*애니메이션의 진행횟수(무한반복)지정*/
+animation-timing-function:cubic-bezier(.71,.31,.37,.87);/*애니메이션의  가속감속 지정*/
+}
+img#boy{
+
+position: fixed;
+left: 24em;
+top: 10em;   
+animation-name:blinking;
+animation-duration:3s;/*애니메이션의 진행시간(단위는 s나 ms)*/
+animation-play-state:running;/*애니메이션의 자동실행 지정(running/paused)*/
+animation-iteration-count:infinite;/*애니메이션의 진행횟수(무한반복)지정*/
+animation-timing-function:cubic-bezier(.71,.31,.37,.87);/*애니메이션의  가속감속 지정*/
+}
+
+@keyframes blinking{
+0%{opacity:0;}
+100%{opacity:1.0;}
+}

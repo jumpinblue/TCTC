@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+
+
+/* 전체 묶음 */
+.container {
+	height: 1045px;
+	width: 100%;
+}
+
+/* 일정표시 테이블 */
+.myplan-list {
+	background: #fff;
+	border: 1px solid #999;
+	border-radius: 3px;
+	height: 100%;
+	line-height: 35px;
+	padding: 10px 10px 30px 10px;
+	text-align: left;
+	width: 353px;
+	position: absolute;
+	z-index: 1000;
+}
+
+.myplan-list h3 {
+	font-size: 1.35em;
+	line-height: 2.5em;
+	padding: 0.7em;
+}
+
+/* 지도표시 */
+#map {
+	bottom: 0px;
+	/* height: 100%; */
+	height: 1045px;
+	left: 365px;
+
+	/* position: absolute; */	position: relative;
+ 	  right: 365px;  
+
+	border: 1px solid #999999;
+	border-radius: 10px;
+
+/* 	  float: left; */
+	width: 1150px;  /*width: 1584px; */
+	overflow: hidden;	
+
+}
+
+/* 대중교통 경로 */
+#right-panel {
+  float: right;
+  width: 365px;
+  height: 1045px; /* height: 100%; */
+  border: 1px solid #999999;
+}
+
+
+.f1 {
+	float: left;
+}
+
+#pln_list {
+	width: 335px;
+	height: 218px;
+	position: absolute;
+	left: 378px;
+	top: 10px;
+	z-index: 999;
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+}
+
+#pln_list #pln_form {
+	padding: 23px;	
+}
+
+#pln_list #fromDate, #toDate {
+	width: 140px;
+	margin-bottom:10px;
+	display: inline-block;
+}
+
+#pln_list select {
+	width: 285px;
+	margin-bottom:10px;
+}
+
+#pln_list .pln_sub {
+	width: 280px;
+}
+#pln_list .pln_sub_free {
+	width: 140px;
+	float: left;
+	padding: 0;
+}
+#pln_list .pln_sub_btn_free {
+	width: 140px;
+	float: left;
+	padding: 0;
+	margin-left: 5px;
+	background-color: #f99;
+}
+
+#pano {
+	width: 220px;
+	height: 220px;
+}
+
+.text {
+	font-size: 12px;
+
+}
+
+ #right-panel {
+  /* font-family: 'Roboto','sans-serif'; */
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#right-panel select, #right-panel input {
+  font-size: 15px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+
+
+.panel {
+  height: 100%;
+  overflow: auto;
+
+}

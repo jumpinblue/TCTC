@@ -1,0 +1,170 @@
+@CHARSET "UTF-8";
+section.planMain{
+	width: 85em;
+	margin: auto auto;
+}
+
+section.planMain h3{
+	padding:0 0 0.8em 1em;
+	font-weight:bold;
+	font-size: 1.2em;
+	color: #f32853;
+	border-bottom: 1px solid #c0c0c0;
+
+}
+
+section.planMain h2{
+	text-align: center;
+	font-size: 1.8em;
+}
+
+section.planMain form h2{
+	text-align: center;
+	font-size: 2em;
+}
+
+/* 검색폼 */
+div.Search{
+	height: 12.5em;
+	padding:0 auto;	
+
+}
+
+form.plan_search {
+	padding:0px auto 0px auto;
+	margin: 6em auto;
+	width: 47.5em;	
+}
+
+form.plan_search select{
+	width: 12.5em;
+	float: left;
+	height: 3em;
+}
+
+form input.search_text{
+	width: 28.2em;
+	float: left;
+	height: 3em;
+}
+
+form input.serch_button{
+	float: left;
+}
+
+
+/* 인기여행지 리스트 */
+div.bestTrip {
+	margin:2em auto;
+	width: 85em;
+}
+
+div.bestTripMenu ul{
+	padding-right:4.5em;
+	text-align:right;
+	float:right;
+	list-style: none;
+}
+
+div.bestTripMenu ul li{
+	float: left;
+	margin-left:1.5em;
+	font-size: 0.8em;
+}
+
+div.bestTripimg table {
+	margin:auto;
+	width:70em;
+	 board:1px solid red;
+}
+
+div.bestTripimg table tr{	
+	background-color:#fff;
+	height: 15em;
+}
+
+div.bestTripimg table td{
+	overflow:hidden;
+	text-align: center;
+	padding-top:6em;
+	border: 10px solid white;
+}
+
+div.bestTripimg td span,div.bestTripimg td span a{
+	font-size:1.3em;
+	color:#999;
+	font-weight:bold;
+	text-shadow: 2px 2px 2px black;
+	margin-top:10em;
+	text-decoration: none;
+}
+
+div.bestTripimg td span a:hover{
+	text-decoration: underline;
+}
+
+div.bestTripimg div{
+	color:#f32853;
+	margin: auto;
+	padding-top:9em;
+	text-align: center;
+}
+div.bestTripimg div span{
+	font-size:2em;
+	margin-top:40em;
+	color:#666;
+	text-shadow: 2px 2px 2px #666;
+
+}
+
+/* 국가 리스트 */
+div.countryList{
+	width:80em;
+	margin: 2em auto;
+}
+
+div.countryList div div{
+	float:left;
+	height:5em;
+	width:20em;
+	padding-left: 4.5em;
+}
+
+div.countryList div div a{
+	font-size: 1em;
+	text-decoration: none;
+	font-weight:bold;
+	color: #666;
+}
+
+div.countryList div div span{
+	font-size: 1em;
+	color: #999;
+}
+
+section.planMain h3 a{
+	font-size: 0.6em;
+	cursor: pointer;
+	
+}
+
+/* 팝업창 뜰때 팝업 이외의 화면은 가려주는 div */
+div#countryMap_back {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 9;	
+	background-color: rgba(255, 255, 255, 0.5);
+	display: none;
+}
+
+/* 팝업창 */
+div#map1,div#map2, div#map3,div#map4,div#map5 {
+	border-radious:30px;
+	position: fixed;
+	margin:10em 27em;
+	z-index: 10;	
+	display: none;
+}

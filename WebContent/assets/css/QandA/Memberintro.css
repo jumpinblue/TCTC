@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url("../../../images/instagram/goldengate.jpg");
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+	line-height: 1.75;
+	text-align: center;
+}
+
+#combine {
+	margin: auto;
+	width: 80%;
+	height: 50%;
+	position: relative;
+	color: white;
+}
+
+#h1 {
+	color: white;
+	font-size: 3em;
+}
+
+#banner {
+	border-radius:10px;
+	text-align: left;
+	width:9em;
+	background-color: white;
+	position: absolute;
+	top: 150px;
+	border-collapse: none;
+	border: none;
+	
+}
+#banner td{
+	text-align:center;
+	padding:3px;
+}
+#darkerlast{
+background-color: rgba(77, 77, 77,0.3);	
+border-radius:0 0 10px 10px;	
+}
+#darker{
+background-color: rgba(77, 77, 77,0.3);
+	
+}
+#banner a{
+	color:black;
+	text-decoration:none;
+}
+#banner a:hover{
+	color:grey;
+	font-weight: bolder;
+	}
+
+#table1 {
+	text-align: left;
+	padding: 0;
+	margin-left: 15em;
+	width: 1080px;
+	height: 500px;
+}
+
+#tdsize {
+	width: 250px;
+}
+
+#table1 td {
+	vertical-align: middle;
+}

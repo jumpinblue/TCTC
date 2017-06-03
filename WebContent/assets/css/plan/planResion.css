@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+/* 지역(도시) 페이지 */
+
+body {
+	background-color: #fff;
+}
+
+/* 첫번재 섹션 : 국가 정보 */
+section#banner {
+	/* 맨 윗부분 */
+}
+section.region_one {
+	/* position: relative; */
+}
+section.region_one .region_info_content {	/* 내용물 전체 */
+	margin: 0 auto;
+	padding: 0;
+	width: 1092px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+section.region_one .region_info_content .imgSlide {	/* 이미지 슬라이드 DIV */
+	width: 800px;
+	height: 369px;
+}
+section.region_one .region_info_content .swiper-slide {	/* 슬라이드 이미지 DIV */
+	width: 600px;
+}
+section.region_one .region_info_content .imgSlide img {	/* 슬라이드 이미지들 */
+	width: 600px;
+	height: 369px;
+}
+
+/* 첫번째 섹션에서 따로 섹션 분리해 정보표시 */
+section.info {	/* 도시 정보 */
+	padding-top: 30px;
+}
+section.info .region_info_content {
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+}
+section.info .region_info_content .region_info table {	
+	margin: 0;
+	padding: 10px 20px;
+	background-color: #f7f7f7;
+	display: block;
+	width: 670px;
+	min-height: 300px;
+	float: right;
+}
+section.info .region_info_content .region_info tr {
+	background-color: #f7f7f7;
+	border: none;
+}
+section.info .region_info_content .region_info th {
+	border: none;
+	width: 100px;
+	font-size: 16px;
+	color: #1a7ad9;
+}
+section.info .region_info_content .region_info td {
+	border: none;
+	font-size: 14px;
+	width: 560px;
+}
+section.info .region_info_content .map {	/* 지도 */
+	width: 520px;
+	height: 300px;
+	float: left;
+	margin: 0;
+}
+
+
+
+/* 두번째 섹션 : 관광지 리스트 */
+section.two {	/* 두번째 섹션 전체 */
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f7f7f7;
+	margin: 0;
+}
+div.travelList {	/* 내용물 전체 */
+	width: 1080px;
+	min-height: 600px;
+	margin: 30px auto;
+}

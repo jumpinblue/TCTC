@@ -1,0 +1,218 @@
+@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+.q {
+	border-radius: 30px;
+
+}
+
+.w {
+	padding-right: 300px;
+	margin-left: 10%;
+	
+}
+
+.e {
+	border: 2px solid #8c8c8c;
+	border-radius: 40px;
+	padding :20px;
+	min-width:500px;
+	max-width:800px;
+	background-color: rgba(246, 246, 246, 0.8);
+	margin-left:100px;
+	margin-bottom: 100px;
+	height: 800px;
+	
+}
+
+body {
+	background-image: url("../../images/kk.jpg");
+	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: 1080px;
+/* 	margin-right: 550px; */
+	
+}
+
+.btn_up_layer {
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	display: none;
+	background-color: white;
+	margin-bottom: 30px;
+	padding: 5px 10px;
+	z-index: 1;
+	background-color: rgba(255,255,255,0);
+}
+
+.btn_up_layer:hover {
+	background-color: rgba(255,255,255,0);
+	
+}
+
+.write{
+
+	position:fixed;
+	margin-top: 3em;
+	margin-left: 1em;
+
+	
+}
+
+#sub {
+	text-align: center;
+
+	font-family: 'Hanna', serif;
+	font-size: 1.5em;
+}
+
+#con {
+	
+	width: 70%;
+	padding-top : 1em;
+	float: right;
+	position: relative;
+	overflow-y : scroll;
+	word-wrap : break-word;
+	font-family: 'Hanna', serif;
+
+}
+
+#file {
+	width: 100px;
+	border-radius: 250px;
+	margin: auto;
+}
+
+#nick{
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Hanna', serif;
+}
+#date{
+	text-align: center;
+}
+
+/* 프로필 이미지 */
+#file img {
+	
+	width: 100px;
+	height: 100px;
+	border-radius: 250px;
+}
+/* 프로필 이미지 끝*/
+
+/*chat css*/
+#chat{
+	width: 20%;
+	min-width:100px;
+/* 	height: 75em; */
+	position:fixed;
+	top:7em;
+	right:0;
+	z-index: 50;
+	margin-bottom: 50px;
+	margin-right: 100px;
+	
+}
+
+#chat input{
+	min-width: 100px;
+}
+/*chat css 끝*/
+
+
+.gl {
+	position: fixed;
+}
+
+@
+-webkit-keyframes fadeIn {from { opacity:0;
+	opacity: 1\9; /* IE9 only */
+}
+
+to {
+	opacity: 1;
+}
+
+}
+@
+-moz-keyframes fadeIn {from { opacity:0;
+	opacity: 1\9; /* IE9 only */
+}
+
+to {
+	opacity: 1;
+}
+
+}
+@
+keyframes fadeIn {from { opacity:0;
+	opacity: 1\9; /* IE9 only */
+}
+
+to {
+	opacity: 1;
+}
+
+}
+.fadein {
+	opacity: 0; /* make things invisible upon start */
+	-webkit-animation: fadeIn ease-in 1;
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+	-webkit-animation-fill-mode: forwards;
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.if{
+	margin-right: 10px;
+}
+
+	#mit{
+	background-color:#E91E63;
+	border-radius:20px;
+	opcity:0.85;
+	}
+	#mit:hover {
+	letter-spacing: 5px;
+	background-color:#4e4b56;
+	
+}
+
+.t{
+	border: 2px solid #8c8c8c;
+	border-radius: 40px;
+	width: 400px;
+	height: 600px;
+/* 	display: none; */
+	background-color: rgba(246, 246, 246, 0.8);
+	position: relative;
+	top: -650px;
+	left: 580px;
+	margin: 0;
+
+}
+.up{
+	margin-top: 300px;
+	border-radius:50px;
+	opcity:0.85;
+}
+.up:hover{
+	background-color:#E91E63;
+}
+.de{
+		border-radius:50px;
+	opcity:0.85;
+}
+
+.de:hover{
+	background-color:#E91E63;
+}

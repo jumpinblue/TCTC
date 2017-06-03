@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>FunWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Connection Pool -->
+	<resource-ref>
+		<description>LostStars DB</description>
+		<res-ref-name>jdbc/mySQL</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+
+	<!-- Member -->
+	<servlet>
+		<servlet-name>MemberFrontController</servlet-name>
+		<servlet-class>net.member.action.MemberFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberFrontController</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+
+	<!-- Plan -->
+	<servlet>
+		<servlet-name>PlanFrontController</servlet-name>
+		<servlet-class>net.plan.action.PlanFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PlanFrontController</servlet-name>
+		<url-pattern>*.pl</url-pattern>
+	</servlet-mapping>
+
+	<!-- Planner -->
+	<servlet>
+		<servlet-name>MyPlanFrontController</servlet-name>
+		<servlet-class>net.myplanBasket.action.MyPlanFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyPlanFrontController</servlet-name>
+		<url-pattern>*.pln</url-pattern>
+	</servlet-mapping>
+
+	<!-- TravelDataAdmin -->
+	<servlet>
+		<servlet-name>TravelFrontController</servlet-name>
+		<servlet-class>net.travel.admin.action.TravelFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TravelFrontController</servlet-name>
+		<url-pattern>*.td</url-pattern>
+	</servlet-mapping>
+
+	<!-- Instagram -->
+	<servlet>
+		<servlet-name>BoardFrontController</servlet-name>
+		<servlet-class>net.board.action.BoardFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BoardFrontController</servlet-name>
+		<url-pattern>*.bo</url-pattern>
+	</servlet-mapping>
+	<!-- 인생샷그램 댓글~-->
+
+	<servlet>
+		<servlet-name>ReplyFrontController</servlet-name>
+		<servlet-class>net.reply.action.ReplyFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReplyFrontController</servlet-name>
+		<url-pattern>*.re</url-pattern>
+	</servlet-mapping>
+
+	<!-- 인생샷그램 좋아용-->
+
+	<servlet>
+		<servlet-name>LikeFrontController</servlet-name>
+		<servlet-class>net.like.action.LikeFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LikeFrontController</servlet-name>
+		<url-pattern>*.lk</url-pattern>
+	</servlet-mapping>
+
+<!-- 함께해요 -->
+	<servlet>
+		<servlet-name>BoardFrontController1</servlet-name>
+		<servlet-class>net.Board1.action.BoardFrontController1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BoardFrontController1</servlet-name>
+		<url-pattern>*.bb</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Chat -->
+	<servlet>
+		<servlet-name>ChatFrontController</servlet-name>
+		<servlet-class>net.chat.action.ChatFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChatFrontController</servlet-name>
+		<url-pattern>*.ct</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 함께해요 댓글~-->
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>ReplyFrontController</servlet-name> -->
+<!-- 		<servlet-class>net.Board_reply.action.ReplyFrontController</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>ReplyFrontController</servlet-name> -->
+<!-- 		<url-pattern>*.rr</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+	<!-- 함께해요 좋아용-->
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>LikeFrontController</servlet-name> -->
+<!-- 		<servlet-class>net.like.action.LikeFrontController</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>LikeFrontController</servlet-name> -->
+<!-- 		<url-pattern>*.lk</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+
+	<!-- Q&A입니당~-->
+
+	<servlet>
+		<servlet-name>QandAFrontController</servlet-name>
+		<servlet-class>net.QandA.action.QandAFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QandAFrontController</servlet-name>
+		<url-pattern>*.qna</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>

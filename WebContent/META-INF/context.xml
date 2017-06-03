@@ -1,0 +1,11 @@
+<Context>
+	<Resource
+		name = "jdbc/mySQL"
+		auth = "Container"
+		type = "javax.sql.DataSource"
+		driverClassName = "com.mysql.jdbc.Driver"
+		url = "jdbc:mysql://192.168.2.17:3306/tomcat"
+		username = "root"
+		password = "1234"
+	/>
+</Context>

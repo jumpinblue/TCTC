@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+/* 공통 */
+.clear {
+	clear: both;
+}
+
+/* join.jsp */
+section.joinSection {
+	/* 테스트 중 */
+	background-image: url("../../../images/member/back/join.png");
+	background-repeat: repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.join_div {
+
+	border: 3px solid #ccc;
+	border-radius: 20px;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+}
+
+div.join_div h1 {
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 20px;
+}
+
+div.join_div h4 {
+	margin-left: 30px;
+	margin-bottom: -20px;
+}
+
+div.join_div form {
+	min-width: 270px;
+	margin: 0;
+	padding: 30px;
+}
+
+div.join_div label {
+	margin-bottom: 0px;
+}
+
+div.join_div input {
+	min-width: 200px;
+	margin-bottom: 15px;
+}
+
+div.join_div .email_btn {
+	width: 180px;
+	float: left;
+	margin-right: 15px;
+}
+
+div.join_div #randomNum {
+	display: none;	
+}
+
+div.join_div .email_check_input {
+	width: 200px;
+	height: 40px;
+}
+
+div.join_div .radio_box {
+	width: 200px;
+	margin-top: -17px;
+	margin-left: 20px;
+}
+
+div.join_div div.join_btn {
+	text-align: center;
+}
+
+div.join_div div.join_btn input[type="submit"] {
+	margin-right: 50px;
+	width: 200px;
+}
+
+div.join_div div.join_btn input[type="reset"] {
+	width: 200px;
+}

@@ -1,0 +1,329 @@
+@CHARSET "UTF-8";
+
+/* 국가 페이지 */
+
+body {
+	background-color: #fff;
+}
+
+/* 첫번재 섹션 : 국가 정보 */
+section#banner {
+	/* 맨 윗부분 */
+}
+section.nation_one {
+	/* position: relative; */
+}
+section.nation_one .nation_info_content {	/* 내용물 전체 */
+	margin: 0 auto;
+	padding: 0;
+	width: 1092px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+section.nation_one .nation_info_content .imgSlide {	/* 이미지 슬라이드 DIV */
+	width: 800px;
+	height: 369px;
+}
+section.nation_one .nation_info_content .swiper-slide {	/* 슬라이드 이미지 DIV */
+	width: 600px;
+}
+section.nation_one .nation_info_content .imgSlide img {	/* 슬라이드 이미지들 */
+	width: 600px;
+	height: 369px;
+}
+
+/* 첫번째 섹션에서 따로 섹션 분리해 정보표시 */
+section.info {	/* 국가 정보 */
+	padding-top: 30px;
+}
+section.info .nation_info_content {
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+}
+section.info .nation_info_content .nation_info table {	
+	margin: 0;
+	padding: 10px 20px;
+	background-color: #f7f7f7;
+	display: block;
+	width: 670px;
+	min-height: 300px;
+	float: right;
+}
+section.info .nation_info_content .nation_info tr {
+	background-color: #f7f7f7;
+	border: none;
+}
+section.info .nation_info_content .nation_info th {
+	border: none;
+	width: 100px;
+	font-size: 16px;
+	color: #1a7ad9;
+}
+section.info .nation_info_content .nation_info td {
+	border: none;
+	font-size: 14px;
+	width: 560px;
+}
+section.info .nation_info_content .map {	/* 지도 */
+	width: 520px;
+	height: 300px;
+	float: left;
+	margin: 0;
+}
+
+
+
+
+/* 두번째 섹션 : 국가 리스트 */
+section.two {	/* 두번째 섹션 전체 */
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f7f7f7;
+	margin: 0;
+}
+div.cityList {	/* 내용물 전체 */
+	width: 1080px;
+	min-height: 600px;
+	margin: 30px auto;
+}
+div.cityList h2 {	/* 제목 */
+	font-size: 28px;
+	text-shadow: 2px 2px 3px #abc;
+	text-align: center;
+	margin: 0;
+	padding-top: 30px ;
+}
+
+div.cityList .search_div {	/* 검색 DIV */
+	width: 360px;
+	float: right;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+div.cityList .search_div #search {
+	width: 290px;
+	background-color: #fff;
+	font-size: 12px;
+	padding-left: 34px;
+	float: left;
+}
+div.cityList .search_div .search_img {	/* 검색 이미지 */
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+div.cityList .search_div input[type=submit] {
+	font-size: 10px;
+	float: right;
+}
+
+div.cityList div.cityListTable {	/* 도시 리스트 테이블 전체 */
+	margin-top: 30px;
+}
+div.cityList div.cityListTable tr {
+	display: inline-block;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+div.cityList div.cityListTable tr:hover {
+	cursor: pointer;
+	border: 1px solid #0054FF;
+}
+div.cityList div.cityListTable td.img_td {	/* 도시 이미지 */
+	background-color: #fff;
+	width: 260px;
+	height: 160px;
+	max-width: 260px;
+	max-height: 160px;
+}
+div.cityList div.cityListTable td.txt_td {	/* 도시 소개 */
+	background-color: #fff;
+	width: 820px;
+	padding: 10px 30px 10px 20px;
+}
+div.cityList div.cityListTable td .city_name {
+	font-size: 16px;
+	font-weight: 900;
+}
+div.cityList div.cityListTable td .city_enName {
+	color: orange;
+	font-weight: 600;
+}
+div.cityList div.cityListTable td .city_info {
+	text-indent: 5px;
+}
+div.cityList div.cityListTable .page {	/* 페이징 */
+	font-size: 16px;
+	text-align: center;
+}
+div.cityList div.cityListTable .page a {
+	padding: 1px 7px;
+	margin-right: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+div.cityList div.cityListTable .page img {
+	width: 13px;
+	height: 13px;
+}
+
+/* 국가, 도시 리뷰 커뮤니티(국가페이지, 도시페이지 공통) */
+section.four {	/* 리뷰 커뮤니티 전체 */
+	font-size: 12px;
+	background-color: #f7f7f7;
+	margin-bottom: -35px;
+	padding: 30px 0;
+}
+div.comment {	/* 내용물 전체를 감싸는 div */
+	width: 1080px;
+	min-height: 700px;
+	margin: 0 auto;
+}
+div.comment h2 {
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+/* 왼쪽 내용물(리스트) */
+div.comment .review_list {	
+	width: 700px;
+	float: left;
+}
+div.comment .review_list tr {
+	height: 150px;
+}
+div.comment .review_list td {
+	background-color: #f7f7f7;
+	position: relative;
+	padding-top: 20px;
+}
+div.comment .review_list td:nth-of-type(1) {
+	width: 92%;
+}
+div.comment .review_list td:nth-of-type(2) {
+	width: 8%;
+}
+div.comment .review_list td img {
+	position: absolute;
+	top: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 25px;
+}
+div.comment .review_list td .c_nick {	/* 닉네임 */
+	position: absolute;
+	left: 60px;
+	top: 15px;
+	font-size: 14px;
+	font-weight: 900;
+}
+div.comment .review_list td .c_date {	/* 글쓴 날짜 */
+	position: absolute;
+	left: 60px;
+	top: 33px;
+	color: #777;
+	font-weight: 600;
+}
+div.comment .review_list td .c_eval {	/* 평가 */
+	position: absolute;
+	left: 60px;
+	top: 70px;
+	color: #FF7012;
+	font-size: 13px;
+}
+div.comment .review_list td .c_content {	/* 본문 */
+	position: absolute;
+	left: 60px;
+	top: 100px;
+	font-size: 13px;
+}
+
+div.comment .review_list .page { /* 페이징 div */
+	text-align: center;
+}
+div.comment .review_list .page a {
+	padding: 1px 7px;
+	margin-right: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+div.comment .review_list .page img {
+	width: 13px;
+	height: 13px;
+}
+
+/* 오른쪽 내용물(리뷰작성 등) */
+div.comment .comment_right {	
+	width: 340px;
+	float: left;
+	margin-left: 10px;
+}
+div.comment .comment_right #writeBtn {	/* 리뷰쓰기 버튼 */
+	font-size: 14px;
+	font-family: "나눔 고딕", "맑은 고딕", sans-serif;
+}
+div.comment .comment_right .reviewWriterDiv {
+	display: none;
+}
+div.comment .comment_right select {	/* 평가하기 */
+	font-size: 14px;
+	margin: 6px 0;
+}
+div.comment .comment_right textarea {	/* 본문 */
+	display: block;
+	width: 340px;
+	height: 400px;
+	font-size: 14px;
+}
+div.comment .comment_right .formBtnDiv {	
+	text-align: center;
+}
+div.comment .comment_right .submitBtn, .comment_right .resetBtn {
+	font-size: 14px;
+	margin: 10px;
+}
+div.comment .comment_right .comment_member {	/* 로그인, 회원가입 버튼 DIV */
+	border: 1px solid #ccc;
+	text-align: center;
+	background-image: url('../../../images/etc/question.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	
+	padding: 30px;
+	font-size: 16px;
+	text-shadow: 2px 2px 2px #ccc;
+	font-weight: 900;
+	color: #000;
+}
+div.comment .comment_right .comment_member .comment_member_btn {
+	text-align: center;
+	margin-top: 30px;
+}
+div.comment .comment_right .comment_member input[type=button] {
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

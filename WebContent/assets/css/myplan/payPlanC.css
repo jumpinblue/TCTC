@@ -1,0 +1,164 @@
+@CHARSET "UTF-8";
+
+form h4 {
+	border-left: 10px solid #484848;
+	text-align: left;
+	margin-left: 3em;
+	font-size: 2em;
+	padding-left: 10px;
+}
+
+.clear{
+	margin: 0;
+	padding: 0;
+	border: none;
+	clear: both;
+}
+
+form {
+	background-color: white;
+	width: 78%;
+	text-align: center;
+	vertical-align: middle;
+	opacity: 0.9;
+	padding-top: 50px;
+}
+
+form th {
+	text-align: center;
+}
+
+table tr th {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.innerTable td {
+	vertical-align: middle;
+}
+
+.pay_way {
+	position: relative;
+}
+
+.pay_way_radio {
+	
+	width: 30%;
+	height: 15em;
+	float: left;
+}
+
+.pay_way_form {
+	
+	width: 70%;
+	height: 15em;
+	margin-left: 30%;
+}
+
+.banner {
+	width: 20%;
+	background-color: white;
+	margin: 0 5px;
+	position: fixed;
+	right: 5px;
+	top: 6em;
+	border: none;
+	border-collapse: none;
+	height: 90%;
+	opacity: 0.9;
+}
+
+.banner .pay_button{
+	width: 20%;
+	position:fixed;
+	right:10px;
+	bottom:5px;
+	background-color: orange;
+}
+.banner .pay_button:hover{
+	background-color: #f55;
+}
+.banner h4 {
+	margin-top: 1.5em;
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 1.5em;
+	border-bottom: 5px solid #484848;
+}
+
+.banner div {
+	margin: 20px;
+}
+
+.agree_check {
+	border: 1px solid #666;
+	padding: 1em;
+}
+
+
+
+.popup_check {
+	border: 1px solid #a40001;
+	margin: 0;
+}
+
+.popup_check span {
+	color: #a40001;
+}
+
+.result {
+	border: 3px solid #fff;
+}
+
+.result table{
+	background-color: white;
+	
+}
+
+.result span {
+	color: orange;
+	text-align: left;
+	font-size:1.5em;
+	font-weight: bold;
+}
+
+.result final_price {
+	color: orange;
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.last_fee th {
+	color: orange;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/* 결제수단 */
+.pay_way_div{
+	padding: 0;
+	margin: 0;
+}
+
+.pay_way_div .pay_way_title{
+	color: orange;
+	font-size: 1.2em;
+	text-align: left;
+	border-left: 10px solid orange;
+}
+
+.pay_way_div table{
+	margin-top:20px;
+	width: 95%;
+	padding: 0;
+}
+/* 결제수단 끝*/
+

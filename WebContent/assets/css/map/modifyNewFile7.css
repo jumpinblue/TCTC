@@ -1,0 +1,158 @@
+@CHARSET "EUC-KR";
+
+.clear {
+	clear: both;
+}
+
+
+.wrap {
+	height: 1045px;
+	width: 100%;
+	position: relative;
+}
+
+#left_box1 {
+	background: #fff;
+	border: 1px solid #999;
+	border-radius: 3px;
+	height: 100%;
+	line-height: 35px;
+	text-align: left;
+	width: 353px;
+	position: absolute;
+	z-index: 1000;
+}
+
+#left_box1 ul {
+	padding-left: 0px;	
+}
+#left_box1 ul li{
+	padding-left: 0px;	
+}
+
+#left_box1_detail {
+	width: 351px;
+	height: 100%;
+	background: #203341;
+	overflow-y: auto;
+	list-style: none;
+}
+
+#left_box1_detail li {
+	width: 100%;
+	height: 70px;
+	background: #203341;
+	color: #fff;
+	text-align: center;
+	border-bottom: solid 1px #374854;
+	cursor: pointer;
+}
+
+#left_box1_detail #size {
+	font-size: 30px;
+}
+
+#left_box2 ul {
+	padding-left: 0px;	
+	margin: 0;
+}
+#left_box2 ul li{
+	padding-left: 0px;	
+}
+
+#left_box2 {
+	position: absolute;
+	z-index: 999;
+/*  	display : none; */
+	left: 365px;	
+}
+
+#left_box2_head {
+	width: 351px;
+	height: 100%;
+	background: #203341;
+	overflow-y: auto;
+	list-style: none;
+}
+
+#left_box2_head  li {
+	width: 100%;
+	height: 70px;
+	background: #203341;
+	color: #fff;
+	text-align: center;
+	border-bottom: solid 1px #374854;
+	cursor: pointer;
+}
+
+#left_box2_detail {
+	border: 1px solid red;
+	width: 351px;
+	height: 100%;
+	background: #203341;
+	list-style: none;
+}
+
+#left_box2_detail li {
+	width: 100%;
+	height: 70px;
+	background: #203341;
+	color: #fff;
+	text-align: center;
+	border-bottom: solid 1px #374854;
+	cursor: pointer;
+}
+
+#right_box ul {
+	padding-left: 0px;	
+	margin: 0;
+}
+#right_box ul li{
+	padding-left: 0px;	
+}
+
+#right_box {
+	position: absolute;
+	z-index: 998;
+ 	display:none;
+	left: 733px;
+}
+
+#right_box_detail {
+	width: 351px;
+	height: 100%;
+	background: #203341;
+	overflow-y: auto;
+	list-style: none;
+}
+
+#right_box_detail li {
+	width: 100%;
+	height: 70px;
+	background: #203341;
+	color: #fff;
+	text-align: center;
+	border-bottom: solid 1px #374854;
+	cursor: pointer;
+}
+
+#map {
+	bottom: 0px;
+	/* height: 100%; */
+	height: 1045px;
+	left: 365px;
+
+	position: absolute;		/* position: relative; */
+ 	right: 365px;  
+ 	
+	border: 1px solid #999999;
+	border-radius: 10px;
+	
+	width: 1584px;
+	overflow: hidden;	
+}
+
+
+.f1 {
+	float: left;
+}
