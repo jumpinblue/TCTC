@@ -3,9 +3,8 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="TCTC-Test">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="TomCat">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="C:/eclipse_jsp/"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
@@ -22,32 +21,32 @@
     </path>
     <path id="EAR Libraries.libraryclasspath"/>
     <path id="Apache Tomcat v8.0 [Apache Tomcat v8.0].libraryclasspath">
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/annotations-api.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-ant.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-ha.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-storeconfig.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-tribes.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/ecj-4.5.1.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/el-api.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/jasper-el.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/jasper.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/jsp-api.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/servlet-api.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-api.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-coyote.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-dbcp.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-i18n-es.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-i18n-fr.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-i18n-ja.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-jdbc.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-jni.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-util-scan.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-util.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-websocket.jar"/>
-        <pathelement location="C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/websocket-api.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/annotations-api.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-ant.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-ha.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-storeconfig.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina-tribes.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/catalina.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/ecj-4.5.1.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/el-api.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/jasper-el.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/jasper.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/jsp-api.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/servlet-api.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-api.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-jni.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-util-scan.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-util.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/tomcat-websocket.jar"/>
+        <pathelement location="../../../../../Program Files/Apache Software Foundation/Tomcat 8.0/lib/websocket-api.jar"/>
     </path>
-    <path id="TCTC-Test.classpath">
+    <path id="TomCat.classpath">
         <pathelement location="build/classes"/>
         <path refid="Web App Libraries.libraryclasspath"/>
         <path refid="EAR Libraries.libraryclasspath"/>
@@ -71,21 +70,8 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="TCTC-Test.classpath"/>
+            <classpath refid="TomCat.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
 </project>
