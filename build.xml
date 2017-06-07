@@ -8,7 +8,9 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    
+     
+              	
+	 <property name="src.dir" value="src" />
      <property name="dist.dir" value="dist"/>
      <property name="build.dir" value="build"/>
      <property name="war.file" value="${dist.dir}/ROOT.war"/>              	
