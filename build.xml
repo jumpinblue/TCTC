@@ -60,6 +60,26 @@
         <path refid="EAR Libraries.libraryclasspath"/>
         <path refid="Apache Tomcat v8.0 [Apache Tomcat v8.0].libraryclasspath"/>
     </path>
+              	
+              	<target name="datentime" description="create current date">
+              	        <tstamp>
+              	         <format property="DSTAMP" pattern="yyyy-MM-dd"/>
+              	         <format property="TSTAMP" pattern="HH:mm:ss"/>
+              	        </tstamp>
+              	     <echo message="Build started at : ${DSTAMP} - ${TSTAMP}" />
+              	    </target>
+
+              	 <target name="prepare" depends="datentime, clean" description="copy web contents">
+              	        <mkdir dir="${build.dir}"/>
+              	  <mkdir dir="${build.dir}/WEB-INF" />
+              	  <mkdir dir="${build.dir}/WEB-INF/classes" />
+              	  <copy todir="${build.dir}">
+              	   <fileset dir="${web.dir}" />
+              	  </copy>
+              	    </target>
+
+              	
+              	
     <target name="init">
         <mkdir dir="build/classes"/>
         <copy includeemptydirs="false" todir="build/classes">
@@ -68,11 +88,15 @@
             </fileset>
         </copy>
     </target>
+              	
+              	
     <target name="clean">
         <delete dir="build/classes"/>
     </target>
+              	
+              	
     <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
+    <target depends="build-subprojects,build-project" name="build"/>    
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
@@ -80,6 +104,12 @@
             <src path="src"/>
             <classpath refid="TomCat.classpath"/>
         </javac>
+    	
+    	 <copy todir="${build.dir}/WEB-INF/classes">
+    	      <fileset dir="${src.dir}" excludes="**/*.java, **/*.properties" />
+    	     </copy>
+
+    	
     </target>
   
 	<target name="dist" depends="build" description="make war file from build to dist">
