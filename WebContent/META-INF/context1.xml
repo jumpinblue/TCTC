@@ -1,0 +1,11 @@
+<Context>
+	<Resource
+		name = "jdbc/mySQL"
+		auth = "Container"
+		type = "javax.sql.DataSource"
+		driverClassName = "com.mysql.jdbc.Driver"
+		url = "jdbc:mysql://loststars.cafe24.com:3306/loststars"
+		username = "root"
+		password = "1234"
+	/>
+</Context>
